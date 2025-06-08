@@ -18,7 +18,7 @@ const Photos = () => {
       <span className="up-down inline-block">nossas memórias juntos</span>
     </div>
 
-    <div className="flex text-2xl font-bold text-center items-center justify-center"> 
+    <div className="bg-pink-100 p-2 flex text-2xl font-bold text-center items-center justify-center"> 
       <span className="">Amei viver tudo isso com você, tudo que fazemos juntos é especial para mim, desde nossas viagens longas até passar
         o dia deitado fazendo nada com você. Espero que a gente continue criando ótimas memórias e passando tempo juntos. Amo estar com você.
       </span>
