@@ -27,7 +27,8 @@ const Home = () => {
 
         <div className="flex w-full text-2xl font-bold text-center justify-around"> 
           <img className="w-25 md:w-40 object-cover inline-block " src={heartRain} alt="Heart Rain"/>
-          <img className="w-25 md:w-40 object-cover inline-block" src={gifCat} alt="Gif Cat"/>
+          <img className="w-25 md:w-40 object-cover inline-block
+          hover:fixed hover:transition hover:scale-500 hover:duration-2000" src={gifCat} alt="Gif Cat"/>
           <img className="w-25 md:w-40 object-cover inline-block " src={heartRain} alt="Heart Rain"/>
         </div>
     
