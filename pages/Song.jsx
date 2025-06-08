@@ -4,10 +4,12 @@ import Button from '../components/Btn'
 import gifCat from "../src/assets/images/hellokitt.gif"
 import heartRain from "../src/assets/images/heart-rain.gif"
 
+import songOne from "../src/assets/songs/matue-maria.mp3"
+import songTwo from "../src/assets/songs/matue-maria copy.mp3"
 
 const playlist = [
-  { title: "Song One", src: "../src/assets/songs/matue-maria.mp3" },
-  { title: "Song Two", src: "../src/assets/songs/matue-maria copy.mp3" },
+  { title: "Song One", src: songOne },
+  { title: "Song Two", src: songTwo },
 ];
 
 
