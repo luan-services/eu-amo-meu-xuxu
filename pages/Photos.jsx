@@ -4,6 +4,7 @@ import Button from '../components/Btn'
 import PhotoCard from '../components/photos/PhotoCard'
 import gifCat from "../src/assets/images/gif-cat.gif"
 import heartRain from "../src/assets/images/heart-rain.gif"
+import { imagesArray } from '../objects/our_photos'
 
 const Photos = () => {
   return (
@@ -24,16 +25,16 @@ const Photos = () => {
     </div>
     
     <div className=" flex flex-wrap text-center justify-center items-center gap-6 text-4xl lg:text-5xl font-bold p-4"> 
-      <PhotoCard>sd</PhotoCard>
-      <PhotoCard>sd</PhotoCard>
-      <PhotoCard>sd</PhotoCard>
-      <PhotoCard>sd</PhotoCard>
-      <PhotoCard>sd</PhotoCard>
-      
-      <PhotoCard>sd</PhotoCard>
-      <PhotoCard>sd</PhotoCard>
-      <PhotoCard>sd</PhotoCard>
-      <PhotoCard>sd</PhotoCard>
+
+      {imagesArray.map((props, index) => {
+                return (
+                    <PhotoCard
+                        key={index}
+                        imgSrc={props.img_src} 
+                        bottomText={props.bottom_text}
+                    />
+                )
+            })}
     </div>
 
     <div className="flex text-2xl font-bold text-center overflow-hidden w-full h-8"> 
@@ -42,9 +43,9 @@ const Photos = () => {
     </div>
 
     <div className="flex text-2xl font-bold text-center justify-around"> 
-      <img className="w-40 object-cover inline-block " src={heartRain} alt="Heart Rain"/>
-      <img className="w-40 object-cover inline-block" src={gifCat} alt="Gif Cat"/>
-      <img className="w-40 object-cover inline-block " src={heartRain} alt="Heart Rain"/>
+      <img className="w-25 md:w-40 object-cover inline-block " src={heartRain} alt="Heart Rain"/>
+      <img className="w-25 md:w-40 object-cover inline-block" src={gifCat} alt="Gif Cat"/>
+      <img className="w-25 md:w-40 object-cover inline-block " src={heartRain} alt="Heart Rain"/>
     </div>
 
 
