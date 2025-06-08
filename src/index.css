@@ -12,6 +12,19 @@
   }
 }
 
+.up-down {
+  animation: upDown 1s ease-in-out infinite;
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.fade-out {
+  animation: fadeOut 6s ease-out forwards;
+}
+
 @import "tailwindcss";
 
 

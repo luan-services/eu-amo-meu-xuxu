@@ -14,7 +14,7 @@ function App() {
   
   return (
     <>
-    <div  className="min-h-screen bg-custom-primary font-pixel bg-center" 
+    <div  className="min-h-screen bg-custom-primary font-pixel bg-center bg-[length:400px_400px] md:bg-[length:500px_500px]" 
     style={{ backgroundImage: `url(${bgImg})` }}> 
       <Router>
         <Routes>
