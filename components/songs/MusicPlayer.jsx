@@ -12,8 +12,8 @@ import songOne from "../../src/assets/songs/matue-maria.mp3"
 import songTwo from "../../src/assets/songs/matue-maria copy.mp3"
 
 const playlist = [
-    { title: "Song One", src: songOne },
-    { title: "Song Two", src: songTwo },
+    { title: "Matilda - Harry Styles", desc: "oii", src: songOne },
+    { title: "Song Two", desc: "oii", src: songTwo },
 ];
 
 const MusicPlayer = ({setIsVinil}) => {
@@ -125,7 +125,7 @@ const MusicPlayer = ({setIsVinil}) => {
 
 
     return (
-    <div className="flex flex-col text-center gap-4 justify-center items-center text-4xl lg:text-xl font-bold p-4"> 
+    <div className="flex flex-col text-center gap-4 justify-center items-center text-4xl lg:text-xl font-bold p-4 pl-0 pr-0 md:p-4"> 
 
         <h2 className="text-xl font-bold">{currentSong.title}</h2>
 
@@ -136,7 +136,7 @@ const MusicPlayer = ({setIsVinil}) => {
         onEnded={handleNext}
         />
 
-        <div className="flex flex-wrap bg-pink-200 justify-center p-3 gap-4 items-center shadow-[-3px_-3px_0_0_#d63384,3px_3px_0_0_#d63384]">
+        <div className="flex flex-wrap bg-pink-200 justify-center p-2 md:p-3 gap-2 md:gap-4 items-center shadow-[-3px_-3px_0_0_#d63384,3px_3px_0_0_#d63384]">
 
     
             <div className="flex gap-1">
@@ -160,7 +160,7 @@ const MusicPlayer = ({setIsVinil}) => {
 
 
             {/* track time bar */}
-            <input type="range" min="0" max="100" value={progress} onChange={handleSeek} className="w-48 h-2 bg-pink-700 pink-slider rounded-lg
+            <input type="range" min="0" max="100" value={progress} onChange={handleSeek} className="w-24 md:w-48 h-2 bg-pink-700 pink-slider rounded-lg
             appearance-none cursor-pointer"/>
 
             {/* Full Time Display */}
@@ -168,7 +168,7 @@ const MusicPlayer = ({setIsVinil}) => {
                 <span>{formatTime(duration)}</span>
             </div>
 
-            <div className="flex space-x-1 items-center">
+            <div className="hidden md:flex space-x-1 items-center">
                 <MpButton onClick={muteVolume}>
                     <img className="w-8 object-cover" src={volume > 0 ? volumebtn : novolume} alt="Volume Button"/>
                 </MpButton>
@@ -179,9 +179,10 @@ const MusicPlayer = ({setIsVinil}) => {
                     step="0.01"
                     value={volume}
                     onChange={handleVolumeChange}
-                    className="w-24 h-2 bg-pink-700 pink-slider appearance-none rounded-lg cursor-pointer"
+                    className="w-18 md:w-24 h-2 bg-pink-700 pink-slider appearance-none rounded-lg cursor-pointer"
                 />
             </div>
+
 
 
         </div>

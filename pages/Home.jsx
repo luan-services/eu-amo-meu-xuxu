@@ -8,7 +8,7 @@ const Home = () => {
   return (
   <div className="container w-full min-h-screen flex flex-col justify-around items-center mx-auto gap-3 md:gap-6 py-10 px-2 sm:px-6 md:px-8 lg:px-10">
 
-    <div className="flex text-4xl lg:text-5xl font-bold text-center justify-center">
+    <div className="flex text-4xl md:text-5xl font-bold text-center justify-center">
       <span className="up-down inline-block"> Feliz dia dos namorados, com carinho pro meu amor!</span>
     </div>
 

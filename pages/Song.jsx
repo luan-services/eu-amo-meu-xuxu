@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { Link } from 'react-router-dom'
 import Button from '../components/Btn'
-import gifCat from "../src/assets/images/hellokitt.gif"
+import gifSylveon from "../src/assets/images/sylveon.gif"
 import heartRain from "../src/assets/images/heart-rain.gif"
 import MusicPlayer from '../components/songs/MusicPlayer';
 import vinilPlayer from "../src/assets/images/music_player/vp.png"
@@ -25,29 +25,24 @@ const Song = () => {
         <Link to="/"><Button>back</Button></Link>
     </div>
 
-    <div className="flex text-4xl lg:text-5xl font-bold text-center items-center justify-center"> 
+    <div className="flex text-4xl md:text-5xl font-bold text-center items-center justify-center"> 
       <span className="up-down inline-block">essas músicas me lembram você</span>
     </div>
 
     <div className="p-2 md:p-4 flex text-2xl font-bold text-center items-center justify-center"> 
 
-      <div className="w-100 h-100 bg-center bg-size-[400px] relative"  style={{ backgroundImage: `url(${vinilPlayer})` }}>
-        <img className={`w-62 object-cover relative z-10 top-14 left-8  ${isVinil ? 'rotate-on-axis' : ''}`} src={cd} alt="Cd"/>
-        <img className="w-100 object-cover inset-0 absolute z-20 left-0 " src={needle} alt="Cd"/>
+      <div className="w-65 h-63 bg-size-[262px] md:w-100 md:h-97 md:bg-size-[402px] bg-center  relative"  style={{ backgroundImage: `url(${vinilPlayer})` }}>
+        <img className={`w-45 top-5.5 left-2.5 md:w-69.25 md:top-8.5 md:left-4 object-cover relative z-10   ${isVinil ? 'rotate-on-axis' : ''}`} src={cd} alt="Cd"/>
+        <img className="w-19 top-4.5 left-38.25 md:w-29 md:top-7 md:left-59.5 object-cover inset-0 absolute z-20  " src={needle} alt="Cd"/>
 
       </div>
     </div>
     
     <MusicPlayer isVinil={isVinil} setIsVinil={setIsVinil}></MusicPlayer>
 
-    <div className="flex text-2xl font-bold text-center overflow-hidden w-full h-8"> 
-      <span className="">te amo te amo te amo te amo te amo te amo te amo te amo te amo te amo te amo 
-        te amo te amo te amo te amo te amo te amo te amo te amo te amo te amo te amo te amo te amo </span>
-    </div>
-
     <div className="flex w-full text-2xl font-bold text-center justify-around"> 
       <img className="w-25 md:w-40 object-cover inline-block " src={heartRain} alt="Heart Rain"/>
-      <img className="w-25 md:w-40 object-cover inline-block" src={gifCat} alt="Gif Cat"/>
+      <img className="w-25 md:w-40 object-cover inline-block" src={gifSylveon} alt="Gif Cat"/>
       <img className="w-25 md:w-40 object-cover inline-block " src={heartRain} alt="Heart Rain"/>
     </div>
 

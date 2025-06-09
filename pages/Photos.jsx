@@ -14,7 +14,7 @@ const Photos = () => {
         <Link to="/"><Button>back</Button></Link>
     </div>
 
-    <div className="flex text-4xl lg:text-5xl font-bold text-center items-center justify-center"> 
+    <div className="flex text-4xl md:text-5xl font-bold text-center items-center justify-center"> 
       <span className="up-down inline-block">nossas memórias juntos</span>
     </div>
 
@@ -24,7 +24,7 @@ const Photos = () => {
       </span>
     </div>
     
-    <div className=" flex flex-wrap text-center justify-center items-center gap-6 text-4xl lg:text-5xl font-bold p-4"> 
+    <div className=" flex flex-wrap text-center justify-center items-center gap-6 text-4xl md:text-5xl font-bold p-4"> 
 
       {imagesArray.map((props, index) => {
                 return (
