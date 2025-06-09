@@ -26,6 +26,35 @@
   animation: fadeOut 6s ease-out forwards;
 }
 
+
+@keyframes spinCustom {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate-on-axis {
+  animation: spinCustom 6s linear infinite;
+}
+
+/* barra de som e de progresso da musica */
+input[type="range"].pink-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 16px;
+  width: 16px;
+  background-color: #ec4899; /* Tailwind pink-500 */
+  border: 2px solid #be185d; /* pink-800 for outline */
+  border-radius: 9999px; /* 👈 Makes it a perfect circle */
+  cursor: pointer;
+  box-shadow: 1px 1px 0 #9d174d; /* optional pixel-style depth */
+}
+
+
+
+
 @import "tailwindcss";
 
 
