@@ -9,7 +9,7 @@ import needle from "../src/assets/images/music_player/needle.png"
 import cd from "../src/assets/images/music_player/cdtwo.png"
 
 
-const Song = () => {
+const Songs = () => {
 
   
   const [isVinil, setIsVinil] = useState(false);
@@ -31,7 +31,7 @@ const Song = () => {
 
     <div className="p-2 md:p-4 flex text-2xl font-bold text-center items-center justify-center"> 
 
-      <div className="w-65 h-63 bg-size-[262px] md:w-100 md:h-97 md:bg-size-[402px] bg-center  relative"  style={{ backgroundImage: `url(${vinilPlayer})` }}>
+      <div className="w-65 h-63 bg-size-[262px] md:w-100 md:h-97 md:bg-size-[402px] bg-center relative"  style={{ backgroundImage: `url(${vinilPlayer})` }}>
         <img className={`w-45 top-5.5 left-2.5 md:w-69.25 md:top-8.5 md:left-4 object-cover relative z-10   ${isVinil ? 'rotate-on-axis' : ''}`} src={cd} alt="Cd"/>
         <img className="w-19 top-4.5 left-38.25 md:w-29 md:top-7 md:left-59.5 object-cover inset-0 absolute z-20  " src={needle} alt="Cd"/>
 
@@ -51,4 +51,4 @@ const Song = () => {
   )
 }
 
-export default Song
+export default Songs

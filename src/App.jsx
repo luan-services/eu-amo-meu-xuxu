@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from '../pages/Home';
 import Letter from '../pages/Letter';
 import CoolGif from '../pages/CoolGif';
-import Song from '../pages/Song';
+import Songs from '../pages/Songs';
 import Photos from '../pages/Photos';
 import bgImg from '../src/assets/images/bg-pattern.png'
 
@@ -22,7 +22,7 @@ function App() {
           <Route path="/letter" element={<Letter />} />
           <Route path="/cool_gif" element={<CoolGif />} />
           <Route path="/photos" element={<Photos />} />
-          <Route path="/song" element={<Song />} />
+          <Route path="/songs" element={<Songs />} />
         </Routes>
       </Router>
     </div>

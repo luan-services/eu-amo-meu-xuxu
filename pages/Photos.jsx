@@ -18,23 +18,25 @@ const Photos = () => {
       <span className="up-down inline-block">nossas memórias juntos</span>
     </div>
 
-    <div className="bg-pink-100 shadow-[-5px_-5px_0_0_#d63384,5px_5px_0_0_#d63384] p-2 md:p-4 flex text-2xl font-bold text-center items-center justify-center"> 
+    <div className="mx-4 bg-pink-100 shadow-[-5px_-5px_0_0_#d63384,5px_5px_0_0_#d63384] p-2 md:p-4 flex text-md md:text-xl font-bold text-center items-center justify-center"> 
       <span className="">Amei viver tudo isso com você, tudo que fazemos juntos é especial para mim, desde nossas viagens longas até passar
-        o dia deitado fazendo nada com você. Espero que a gente continue criando ótimas memórias e passando tempo juntos. Amo estar com você.
+        o dia deitado fazendo nada com você. <br></br>Espero que a gente continue criando ótimas memórias e passando tempo juntos. Em nenhum momento eu vou cansar de estar
+        com você, nem por um minuto, em todos os segundos, eu amo viver com você.
       </span>
     </div>
-    
-    <div className=" flex flex-wrap text-center justify-center items-center gap-6 text-4xl md:text-5xl font-bold p-4"> 
-
-      {imagesArray.map((props, index) => {
-                return (
-                    <PhotoCard
-                        key={index}
-                        imgSrc={props.img_src} 
-                        bottomText={props.bottom_text}
-                    />
-                )
-            })}
+    <div className="m-2 mx-8 h-120 shadow-[-5px_-5px_0_0_#d63384,5px_5px_0_0_#d63384] overflow-y-auto border border-gray-300 bg-pink-200 p-2">
+      <div className=" flex flex-wrap text-center justify-center items-center gap-6 text-4xl md:text-5xl font-bold p-4"> 
+      
+        {imagesArray.map((props, index) => {
+                  return (
+                      <PhotoCard
+                          key={index}
+                          imgSrc={props.img_src} 
+                          bottomText={props.bottom_text}
+                      />
+                  )
+              })}
+      </div>
     </div>
 
     <div className="flex text-2xl font-bold text-center overflow-hidden w-full h-8"> 
@@ -43,9 +45,9 @@ const Photos = () => {
     </div>
 
     <div className="flex w-full text-2xl font-bold text-center justify-around"> 
-      <img className="w-25 md:w-40 object-cover inline-block " src={heartRain} alt="Heart Rain"/>
-      <img className="w-25 md:w-40 object-cover inline-block" src={gifCat} alt="Gif Cat"/>
-      <img className="w-25 md:w-40 object-cover inline-block " src={heartRain} alt="Heart Rain"/>
+      <img className="w-18 md:w-40 object-cover inline-block " src={heartRain} alt="Heart Rain"/>
+      <img className="w-18 md:w-40 object-cover inline-block" src={gifCat} alt="Gif Cat"/>
+      <img className="w-18 md:w-40 object-cover inline-block " src={heartRain} alt="Heart Rain"/>
     </div>
 
 
