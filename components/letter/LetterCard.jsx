@@ -31,12 +31,12 @@ export default function LetterCard() {
         {/* Carta */}
         <motion.div initial={{ height: "12rem" }} animate={isOpened ? { height: "28rem" } : { height: "12rem" }} transition={{ duration: 2, ease: "easeInOut", delay: isOpened ? 2 : 0 }}
           className="absolute bottom-0 left-6 right-6 bg-white border border-gray-300 z-35 rounded-sm shadow p-4 overflow-auto origin-bottom">
-          <div className="text-gray-800 text-sm">
+          <div className="text-gray-800 text-xs">
             Meu amor,<br /><br />
             Estou escrevendo essa cara para dizer o quanto eu te amo, se ainda não ficou claro, e também quero te fazer um convite.<br /><br />
-            Estamos juntos há <TempoDecorrido dataInicial="2025-03-21T12:00:00Z"/>, mas o que eu queria saber de verdade é:<br /><br />
-            <span className="text-center block font-bold">VOCÊ QUER SER MINHA PRA SEMPRE!????</span><br />
-            💌
+            Estamos namorando há <TempoDecorrido dataInicial="2025-03-21T12:00:00Z"/>, e juntos há muito mais tempo. <br /><br />
+            De tanto tempo que o mundo existe, eu amo poder estar vivo na mesma época que você, e quero viver muito mais, por isso preciso perguntar:<br /><br />
+            <span className="text-center block font-bold">VOCÊ QUER SER MINHA <br/>PRA SEMPRE!????</span><br />
           </div>
         </motion.div>
 

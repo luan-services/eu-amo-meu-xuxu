@@ -5,7 +5,7 @@ import './App.css'
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from '../pages/Home';
 import Letter from '../pages/Letter';
-import CoolGif from '../pages/CoolGif';
+import CoolGift from '../pages/CoolGift';
 import Songs from '../pages/Songs';
 import Photos from '../pages/Photos';
 import bgImg from '../src/assets/images/bg-pattern.png'
@@ -20,7 +20,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/letter" element={<Letter />} />
-          <Route path="/cool_gif" element={<CoolGif />} />
+          <Route path="/cool_gift" element={<CoolGift />} />
           <Route path="/photos" element={<Photos />} />
           <Route path="/songs" element={<Songs />} />
         </Routes>
