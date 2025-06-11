@@ -8,12 +8,25 @@ import pause from "../../src/assets/images/music_player/pause.png"
 import volumebtn from "../../src/assets/images/music_player/volume.png"
 import novolume from "../../src/assets/images/music_player/no-volume.png"
 
-import songOne from "../../src/assets/songs/matue-maria.mp3"
-import songTwo from "../../src/assets/songs/matue-maria copy.mp3"
+
+import birds_of_a_feather from "../../src/assets/songs/birds-of-a-feather.mp3"
+import eu_amo_voce from "../../src/assets/songs/eu-amo-voce.mp3"
+import lego_house from "../../src/assets/songs/lego-house.mp3"
+import like_you_do from "../../src/assets/songs/like-you-do.mp3"
+import matilda from "../../src/assets/songs/matilda.mp3"
+import selfless from "../../src/assets/songs/selfless.mp3"
+import smithereens from "../../src/assets/songs/smithereens.mp3"
 
 const playlist = [
-    { title: "Matilda - Harry Styles", desc: "oii", src: songOne },
-    { title: "Song Two", desc: "oii", src: songTwo },
+    { title: "BIRDS OF A FEATHER - Billie Eillish", desc: "i think we should stick together, if not forever, maybe till the day we day, but forever is even better, isn't it?", src: birds_of_a_feather },
+    { title: "Eu Amo Você - Tim Maia", desc: "toda vez que eu te olho, meu coração sabe que é você. eu amo você, eu amo você, eu amo você", src: eu_amo_voce },
+    { title: "Lego House - Ed Sheeran", desc: "i'd anything for you, and of all the things i've done, I think I love you better now", src: lego_house },
+    { title: "Like You Do - Joji", desc: "this one remembers me of you, but i'm not sure, do you love me more than anyone? they don't love me like you do?", src: like_you_do },
+    { title: "Matilda - Harry Styles", desc: "i wanna see you happy more than anything, anywhere you go, you don't need a reason, you don't have to be sorry for leaving and growing up", src: matilda },
+    { title: "Selfless - The Strokes", desc: "you're the light light laying in my face when i see the sun, please don't be long cause I need your love", src: selfless },
+    { title: "Smithereens - Twenty One Pilots", desc: "you know, i always been collected calm and chill, but for you i'd do anything, even get beat to smithereens", src: smithereens },
+
+
 ];
 
 const MusicPlayer = ({setIsVinil}) => {
@@ -187,6 +200,11 @@ const MusicPlayer = ({setIsVinil}) => {
 
         </div>
 
+        
+        <div className="flex w-2/10 bg-pink-100 shadow-[-5px_-5px_0_0_#d63384,5px_5px_0_0_#d63384] p-2 md:p-4 text-xs md:text-xl font-bold text-center items-center w-full justify-center"> 
+ 
+        <h2 className="text-xl font-bold">{currentSong.desc}</h2>
+      </div>
     </div>
     )
 }

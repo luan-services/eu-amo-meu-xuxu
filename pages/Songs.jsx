@@ -7,6 +7,7 @@ import MusicPlayer from '../components/songs/MusicPlayer';
 import vinilPlayer from "../src/assets/images/music_player/vp.png"
 import needle from "../src/assets/images/music_player/needle.png"
 import cd from "../src/assets/images/music_player/cdtwo.png"
+import spotify from "../src/assets/images/music_player/spotify.png"
 
 
 const Songs = () => {
@@ -39,6 +40,13 @@ const Songs = () => {
     </div>
     
     <MusicPlayer isVinil={isVinil} setIsVinil={setIsVinil}></MusicPlayer>
+
+    <div className="flex w-10/10 justify-center pb-2">
+       <a className="inline w-12 active:pt-0.5" target="_blank" href="https://open.spotify.com/playlist/0DREsaVgQf3eI8YRrVLehe?si=913cac6276a54106">
+        <img className="w-12 shadow-lg border-3 border-b-5 active:border-b-3  border-green-900 rounded-xl object-cover" src={spotify} alt="Next Button"/>
+      </a>
+    </div>
+
 
     <div className="flex w-full text-2xl font-bold text-center justify-around"> 
       <img className="w-25 md:w-40 object-cover inline-block " src={heartRain} alt="Heart Rain"/>
