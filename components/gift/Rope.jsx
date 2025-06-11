@@ -45,7 +45,6 @@ export default function RopePull() {
   useEffect(() => {
     const handleMove = (e) => {
       if (!isDragging) return;
-      if (isTouchEvent(e)) e.preventDefault(); // ⛔ Stop pull-to-refresh
       const currentY = getY(e);
       const deltaY = currentY - startY;
       const clamped = Math.max(0, Math.min(deltaY, maxPull));
@@ -81,7 +80,6 @@ export default function RopePull() {
   }, [isDragging, startY, reachedMax]);
 
   const handleStart = (e) => {
-    if (isTouchEvent(e)) e.preventDefault(); // ⛔ Stop pull-to-refresh
     setIsDragging(true);
     setStartY(getY(e));
     setReachedMax(false);
