@@ -14,7 +14,7 @@ const Home = () => {
 
     <div className="flex bg-pink-100 shadow-[-5px_-5px_0_0_#d63384,5px_5px_0_0_#d63384] p-2 md:p-4 text-md md:text-xl w-8/10 font-bold text-center items-center justify-center"> 
       <span className="">
-        Esse é nosso primeiro dia dos namorados juntos e quero que seja especial. Espero que goste da surpresa, eu amo você, Maria Cristina.
+        Esse é nosso primeiro dia dos namorados juntos e quero que seja especial, espero que goste da surpresa. Eu amo você, Maria Cristina.
       </span>
     </div>
 

@@ -110,9 +110,16 @@ const MusicPlayer = ({setIsVinil}) => {
     };
 
     const handlePrev = () => {
-        setCurrentTrack((prev) => (prev - 1 + playlist.length) % playlist.length);
-        setIsPlaying(true);
-        setIsVinil(true);
+        if (audioRef.current.currentTime > 4) {
+            audioRef.current.currentTime = 0;
+            audioRef.current.play();
+        }
+        else {
+            setCurrentTrack((prev) => (prev - 1 + playlist.length) % playlist.length);
+            setIsPlaying(true);
+            setIsVinil(true);
+        }
+
     };
 
     useEffect(() => {

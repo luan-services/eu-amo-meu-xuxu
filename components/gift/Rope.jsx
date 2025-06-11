@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 
-import song from "../../src/assets/songs/birds-of-a-feather.mp3"
+import song from "../../src/assets/songs/jhope.mp3"
 import jhope from "../../src/assets/images/jhope plush.png"
 
 export default function RopePull() {
@@ -100,7 +100,7 @@ export default function RopePull() {
 
                 {/* Ring */}
                 <div onMouseDown={handleStart} onTouchStart={handleStart} className="w-10 h-10 border-4 border-gray-200
-                    rounded-full mt-0 cursor-pointer   transition"></div>
+                    rounded-full mt-0 cursor-grab  transition"></div>
 
                     <div className="text-center text-md md:text-xl font-bold transition"> puxe aqui</div>
             </div>

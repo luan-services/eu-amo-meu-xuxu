@@ -19,14 +19,14 @@ export default function LetterCard() {
       <div className="relative w-80 h-80 overflow-visible perspective-[1000px]">
 
         {/* Parte de trás do envelope */}
-        <div className="absolute bottom-0 left-0 w-full h-2/3 bg-pink-400 z-0 shadow-[-4px_-4px_0_0_black,4px_4px_0_0_black] " />
+        <div className="absolute bottom-0 left-0 w-full h-2/3 bg-pink-300 z-0 shadow-[-5px_-5px_0_0_#d63384,5px_5px_0_0_#d63384] " />
 
         {/* Corpo do envelope */}
-        <div className="absolute bottom-0 left-0 w-full h-2/3 bg-pink-300 clip-envelope-body z-40" />
+        <div className="absolute bottom-0 left-0 w-full h-2/3 bg-pink-200 clip-envelope-body z-40" />
 
         {/* Aba do envelope */}
         <motion.div initial={{ rotateX: -180 }} animate={isOpened ? { rotateX: 0 } : { rotateX: -180 }} transition={{ duration: 2, ease: "easeInOut" }}
-          className={`absolute top-auto bottom-[calc(66.66%)] left-0 w-full h-[41%] bg-pink-400 clip-envelope-flap origin-bottom ${flapZIndex}`} style={{ transformStyle: 'preserve-3d' }}/>
+          className={`absolute top-auto bottom-[calc(66.66%)] left-0 w-full h-[41%] bg-pink-300 clip-envelope-flap origin-bottom ${flapZIndex}`} style={{ transformStyle: 'preserve-3d' }}/>
 
         {/* Carta */}
         <motion.div initial={{ height: "12rem" }} animate={isOpened ? { height: "28rem" } : { height: "12rem" }} transition={{ duration: 2, ease: "easeInOut", delay: isOpened ? 2 : 0 }}
@@ -40,12 +40,6 @@ export default function LetterCard() {
           </div>
         </motion.div>
 
-        {/* Selo de coração */}
-        <div className="absolute bottom-18 border-2 border-pink-900 left-1/2 transform -translate-x-1/2 w-8 h-8 bg-pink-400 rounded-full z-50 flex items-center justify-center">
-          <div className="text-white text-sm">
-                <img className="w-5 object-cover inline-block" src={heart} alt="Heart Rain"/>
-          </div>
-        </div>
 
       </div>
 

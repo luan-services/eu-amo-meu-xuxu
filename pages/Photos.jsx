@@ -4,6 +4,7 @@ import Button from '../components/Btn'
 import PhotoCard from '../components/photos/PhotoCard'
 import gifCat from "../src/assets/images/gif-cat.gif"
 import heartRain from "../src/assets/images/heart-rain.gif"
+import camera from "../src/assets/images/polaroid_camera.png"
 import { imagesArray } from '../objects/our_photos'
 
 const Photos = () => {
@@ -24,8 +25,14 @@ const Photos = () => {
         com você, nem por um minuto, em todos os segundos, eu amo viver com você.
       </span>
     </div>
-    <div className="m-2 mx-8 h-120 shadow-[-5px_-5px_0_0_black,5px_5px_0_0_black] overflow-y-auto border border-gray-300 bg-orange-200 p-2">
-      <div className=" flex flex-wrap text-center justify-center items-center gap-6 text-4xl md:text-5xl font-bold p-4"> 
+
+    <div className="flex items-center justify-center">
+      <img className="relative top-8 w-84 object-cover inline-block " src={camera} alt="Heart Rain"/>
+    </div>
+
+    <div className="flex justify-center mx-2 z-10 h-120">
+      <div className=" flex flex-wrap  max-w-80 bg-orange-200 custom-scrollbar
+      overflow-y-auto border-b-black border-b-5 shadow-[-5px_-5px_0_0_black,5px_-5px_0_0_black] text-center justify-center items-center gap-6 text-4xl md:text-5xl font-bold pb-4 pt-4 "> 
       
         {imagesArray.map((props, index) => {
                   return (

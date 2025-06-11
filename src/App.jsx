@@ -8,13 +8,13 @@ import Letter from '../pages/Letter';
 import CoolGift from '../pages/CoolGift';
 import Songs from '../pages/Songs';
 import Photos from '../pages/Photos';
-import bgImg from '../src/assets/images/bg-pattern.png'
+import bgImg from '../src/assets/images/bg-image-two.png'
 
 function App() {
   
   return (
     <>
-    <div  className="min-h-screen bg-custom-primary font-pixel bg-center bg-[length:400px_400px] md:bg-[length:500px_500px]" 
+    <div  className="min-h-screen bg-custom-primary font-pixel bg-center bg-[length:300px_450px] md:bg-[length:500px_750px]" 
     style={{ backgroundImage: `url(${bgImg})` }}> 
       <Router>
         <Routes>
