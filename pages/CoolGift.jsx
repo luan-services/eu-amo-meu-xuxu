@@ -19,7 +19,7 @@ const CoolGift = () => {
 
   
     <div className="mx-4 bg-pink-100 shadow-[-5px_-5px_0_0_#d63384,5px_5px_0_0_#d63384] p-2 md:p-4 flex text-md md:text-xl font-bold text-center items-center justify-center"> 
-      <span className="">Tive que aprender a costurar p botar um gravador dentro desse boneco, espero que goste.
+      <span className="">Tive que aprender a costurar p botar um gravador dentro desse boneco, deu muito trabalho, espero que goste.
       </span>
     </div>
 
